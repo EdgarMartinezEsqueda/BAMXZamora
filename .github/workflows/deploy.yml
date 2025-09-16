@@ -20,6 +20,19 @@ jobs:
         script: |
           echo "=== Iniciando deployment ==="
           
+          # Cargar NVM y Node.js
+          export NVM_DIR="/root/.nvm"
+          [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+          [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+          
+          # Usar la versión específica de Node
+          nvm use v22.19.0
+          
+          echo "=== Verificando herramientas ==="
+          node --version
+          npm --version
+          pm2 --version
+          
           # Navegar al directorio del proyecto
           cd ${{ secrets.ROUTE }}
           
@@ -37,11 +50,7 @@ jobs:
           echo "=== Ejecutando build ==="
           npm run build
           
-          # Reiniciar servicios
-          echo "=== Reiniciando aplicación ==="
-          pm2 restart tu-app-name
-          
           # Reiniciar nginx
-          # sudo systemctl restart nginx
+          sudo systemctl restart nginx
           
           echo "=== Deployment completado ==="
