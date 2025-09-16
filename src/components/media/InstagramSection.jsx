@@ -27,7 +27,7 @@ const InstagramSection = () => {
 
           {/* Widget con estilo */}
           <div className="bg-white rounded-2xl shadow-lg border border-verdeLogo/30 p-6">
-            <div className="elfsight-app-e36d1596-5891-49db-a69e-b935dccc049c" data-elfsight-app-lazy></div>
+            <div className={import.meta.env.VITE_InstagramApp} data-elfsight-app-lazy></div>
           </div>
         </div>
       </section>
