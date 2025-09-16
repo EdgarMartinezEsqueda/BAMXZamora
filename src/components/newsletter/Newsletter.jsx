@@ -9,8 +9,8 @@ const NewsletterSection = () => {
     month: new Date().toLocaleString("es-MX", { month: "long" }),
     year: new Date().getFullYear(),
     edition: "Edición #127",
-    pdfUrl: "https://drive.google.com/file/d/1rjSWcV3O02vLFc1ZqGM6rViWpOKA3-5S/view", // Tu enlace de Drive
-    previewUrl: "https://drive.google.com/file/d/1rjSWcV3O02vLFc1ZqGM6rViWpOKA3-5S/preview", // Para iframe
+    pdfUrl: import.meta.env.VITE_EnlaceBoletin + "/view", // Tu enlace de Drive
+    previewUrl: import.meta.env.VITE_EnlaceBoletin + "/preview", // Para iframe
   };
 
   const handlePreview = () => {
@@ -21,7 +21,7 @@ const NewsletterSection = () => {
   const handleDownload = () => {
     // Convertir link de view a download
     const pdfId = currentNewsletter.pdfUrl.split("/");
-    const downloadUrl = "https://drive.google.com/uc?export=download&id=" + pdfId.at( pdfId.length - 2 );
+    const downloadUrl = "https://drive.google.com/uc?export=download&id=" + pdfId.at( pdfId.length - 3 );
     window.open(downloadUrl, "_blank");
   };
 
