@@ -1,0 +1,47 @@
+name: Deploy to VPS
+
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Deploy to VPS
+      uses: appleboy/ssh-action@v1.0.0
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.SSH_KEY }}
+        port: 22
+        script: |
+          echo "=== Iniciando deployment ==="
+          
+          # Navegar al directorio del proyecto
+          cd ${{ secrets.ROUTE }}
+          
+          echo "=== Directorio actual: $(pwd) ==="
+          
+          # Hacer git pull
+          echo "=== Ejecutando git pull ==="
+          git pull
+          
+          # Instalar/actualizar dependencias
+          echo "=== Instalando dependencias ==="
+          npm install
+          
+          # Hacer el build
+          echo "=== Ejecutando build ==="
+          npm run build
+          
+          # Reiniciar servicios
+          echo "=== Reiniciando aplicación ==="
+          pm2 restart tu-app-name
+          
+          # Reiniciar nginx
+          # sudo systemctl restart nginx
+          
+          echo "=== Deployment completado ==="
