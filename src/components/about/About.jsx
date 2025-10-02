@@ -14,7 +14,7 @@ const AboutSection = () => {
     },
     { 
       id: "Tab2", 
-      title: "Nuestra Visión", 
+      title: "Nuestros Programas", 
       image: "about-6.jpg",
       icon: <FaUsers className="w-4 h-4" />,
       color: "bg-blue-500"
@@ -30,26 +30,26 @@ const AboutSection = () => {
 
   const tabContent = {
     Tab1: [
-      "Combatir el hambre y mejorar la nutrición de las familias más vulnerables.",
-      "Repartimos más de 1'000,000 kg de frutas y verduras al año.",
-      "Colaboramos con empresas, instituciones y voluntarios comprometidos."
+      "Rescatar, distribuir y canalizar alimentos a quienes más lo necesitan.",
+      "Atendemos a más de 2,600 familias beneficiarias cada mes.",
+      "Promovemos programas biopsicosociales para mejorar la calidad de vida."
     ],
     Tab2: [
-      "Ser un referente en la lucha contra el desperdicio alimentario.",
-      "Fomentar una cultura de solidaridad, corresponsabilidad y servicio.",
-      "Expandir nuestra cobertura en la región de Los Altos de Jalisco y parte de Zacatecas."
+      "Comedor Comunitario BAZAC: desayunos nutritivos a bajo costo.",
+      "Campañas solidarias: Abrigando Corazones, Rescatón y Pequeñas Sonrisas.",
+      "Programa de apadrinamiento: 'Por menos hambre y más sonrisas'."
     ],
     Tab3: [
-      "Solidaridad: actuamos con empatía y compromiso.",
-      "Transparencia: rendimos cuentas con claridad y honestidad.",
-      "Trabajo en equipo: colaboramos con entusiasmo por un bien común."
+      "Equidad: respetamos la dignidad de cada persona beneficiada.",
+      "Solidaridad: trabajamos con aliados, donantes y voluntarios.",
+      "Transparencia: rendimos cuentas claras a la comunidad."
     ]
   };
 
   const stats = [
-    { number: "9,000+", label: "Familias beneficiadas" },
-    { number: "90+", label: "Puntos de entrega" },
-    { number: "1M+", label: "Kg de alimentos al año" }
+    { number: "2,600+", label: "Familias beneficiadas cada mes" },
+    { number: "70+", label: "Grupos comunitarios" },
+    { number: "70,000+ kg", label: "Alimentos entregados mensualmente" }
   ];
 
   return (
@@ -78,8 +78,8 @@ const AboutSection = () => {
                 before:absolute before:-left-6 before:top-14 before:w-1 before:h-52 before:bg-gradient-to-b before:from-verdeLogo before:to-amarilloLogo before:z-[-1] before:rounded-full">
                 
                 <img 
-                  src="assets/images/beneficiarios/6.webp" 
-                  alt="Familias beneficiadas por el banco de alimentos" 
+                  src="assets/images/beneficiarios/13.webp" 
+                  alt="Personal banco de alimentos" 
                   className="w-[537px] max-h-[780px] rounded-2xl object-cover transition-transform duration-500"
                 />
                 
@@ -90,7 +90,7 @@ const AboutSection = () => {
               {/* Imagen secundaria mejorada */}
               <div className="absolute -right-10 -bottom-24 rounded-2xl shadow-xl hidden lg:block overflow-hidden group/secondary">
                 <img 
-                  src="assets/images/beneficiarios/12.webp" 
+                  src="assets/images/beneficiarios/15.webp" 
                   alt="Voluntarios del banco de alimentos" 
                   className="w-[297px] h-[307px] object-cover transition-transform duration-300 group-hover/secondary:scale-110"
                 />
@@ -195,7 +195,7 @@ const AboutSection = () => {
                     {/* Video mejorado */}
                     <div className="relative w-full lg:w-64 h-48 rounded-xl overflow-hidden shadow-lg group/video order-2 lg:order-1 mx-auto lg:mx-0">
                       <img 
-                        src="/assets/images/beneficiarios/1.webp" 
+                        src="/assets/images/beneficiarios/26.webp" 
                         alt="Video testimonial del banco de alimentos" 
                         className="w-full h-full object-cover group-hover/video:scale-110 transition-transform duration-500"
                       />

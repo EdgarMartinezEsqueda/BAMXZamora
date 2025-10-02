@@ -9,7 +9,7 @@ const Gallery = () => {
   const [loading, setLoading] = useState(false);
   const lightboxRef = useRef(null);
 
-  const imageImports = Array.from({ length: 24 }, (_, i) => ({
+  const imageImports = Array.from({ length: 28 }, (_, i) => ({
     id: i + 1,
     src: `/assets/images/beneficiarios/${i + 1}.webp`,
     alt: `Beneficiario ${i + 1}`

@@ -1,5 +1,5 @@
-# Banco de Alimentos - Página Web
-![BAMX Tepatitlán](https://bamx.org.mx/wp-content/uploads/agile-store-locator/Logo/tepatitlan.webp)
+# Banco de Alimentos de Zamora - Página Web
+![BAMX Zamora](https://bamx.org.mx/wp-content/uploads/agile-store-locator/Logo/tepatitlan.webp)
 
 Este proyecto es una página web para el BAMX ZAMORA, desarrollada con **Vite + React**. Está diseñada para informar sobre los programas, actividades e impacto del banco de alimentos, así como para facilitar la comunicación con los beneficiarios y colaboradores.
 

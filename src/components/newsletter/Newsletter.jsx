@@ -21,7 +21,7 @@ const NewsletterSection = () => {
   const handleDownload = () => {
     // Convertir link de view a download
     const pdfId = currentNewsletter.pdfUrl.split("/");
-    const downloadUrl = "https://drive.google.com/uc?export=download&id=" + pdfId.at( pdfId.length - 3 );
+    const downloadUrl = "https://drive.google.com/uc?export=download&id=" + pdfId.at( pdfId.length - 2 );
     window.open(downloadUrl, "_blank");
   };
 
@@ -85,7 +85,7 @@ const NewsletterSection = () => {
           </h2>
           
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Cada mes compartimos nuestros logros, historias de esperanza y el impacto de tu apoyo en las comunidades de Los Altos de Jalisco
+            Cada mes compartimos contigo logros, historias de esperanza y el impacto de tu apoyo en las familias de Zamora y la región de Michoacán.          
           </p>
         </div>
 
@@ -100,8 +100,9 @@ const NewsletterSection = () => {
               </h3>
 
               <p className="text-gray-600 text-lg leading-relaxed">
-                Nuestro boletín mensual te mantiene al día con las actividades, logros y testimonios del BAMX Zamora. Cada edición incluye estadísticas actualizadas, historias de familias beneficiadas y próximos eventos.
-              </p>
+                Nuestro boletín mensual es una forma de mantenerte cerca de lo que juntos hacemos posible. Aquí encontrarás estadísticas de impacto, testimonios de familias beneficiadas, información sobre nuestras campañas y próximos eventos.
+                <br />
+                Al mantenerte informado, también formas parte de esta red solidaria que transforma vidas todos los días.              </p>
             </div>
 
             {/* Botones de acción principales */}
@@ -127,7 +128,7 @@ const NewsletterSection = () => {
             <div className="bg-gradient-to-r from-gray-50 to-blue-50/50 border border-gray-200 rounded-2xl p-6 space-y-4">
               <h4 className="font-bold text-gray-800 text-lg flex items-center gap-3">
                 <FiBookOpen className="text-indigo-500 text-xl" />
-                ¿Qué encontrarás cada mes?
+                ¿Qué puedes encontrar cada mes?
               </h4>
               
               <div className="grid sm:grid-cols-2 gap-3 text-sm">
@@ -137,15 +138,15 @@ const NewsletterSection = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-amarilloLogo rounded-full"></div>
-                  <span className="text-gray-700">Testimonios reales</span>
+                  <span className="text-gray-700">Historias y testimonios reales</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-rojoLogo rounded-full"></div>
-                  <span className="text-gray-700">Próximos eventos</span>
+                  <span className="text-gray-700">Próximas campañas y eventos</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-indigo-500 rounded-full"></div>
-                  <span className="text-gray-700">Reconocimientos</span>
+                  <span className="text-gray-700">Reconocimientos a donadores y voluntarios</span>
                 </div>
               </div>
             </div>

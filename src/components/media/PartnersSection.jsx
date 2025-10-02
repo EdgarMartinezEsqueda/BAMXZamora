@@ -29,7 +29,7 @@ const PartnersSection = () => {
 
         {/* Slider envuelto en un card */}
         <div >
-          <Partners folderName="partners" totalImages={13} altText="Partner" />
+          <Partners folderName="partners" totalImages={25} altText="Partner" />
         </div>
       </div>
     </section>

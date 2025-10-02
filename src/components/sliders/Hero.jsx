@@ -10,27 +10,27 @@ const HeroSlider = () => {
   const slides = [
     {
       image: "/assets/images/beneficiarios/4.webp",
-      title: "Alimentamos esperanza, transformamos vidas",
-      subtitle: "Cada despensa entregada es una oportunidad para construir un mejor futuro",
-      description: "Unidos contra el hambre, unidos por nuestra comunidad.",
+      title: "Rescatamos alimentos, alimentamos vidas",
+      subtitle: "Más de 70 mil kg de alimentos entregados cada mes",
+      description: "Apoyamos a más de 2,600 familias con dignidad y esperanza.",
       icon: FiHeart,
-      stats: { number: "15,000+", label: "Familias beneficiadas" }
+      stats: { number: "2,600+", label: "Familias beneficiadas" }
     },
     {
-      image: "/assets/images/beneficiarios/6.webp",
-      title: "Tú puedes ser parte del cambio",
-      subtitle: "Cada apoyo suma, cada voluntario transforma",
-      description: "Haz la diferencia hoy, ayuda a quienes más lo necesitan.",
+      image: "/assets/images/beneficiarios/17.webp",
+      title: "Tu apoyo genera sonrisas",
+      subtitle: "Cada donación y voluntario transforma comunidades",
+      description: "Súmate a campañas, programas y acciones solidarias.",
       icon: FiUsers,
-      stats: { number: "500+", label: "Voluntarios activos" }
+      stats: { number: "70+", label: "Grupos comunitarios" }
     },
     {
-      image: "/assets/images/beneficiarios/12.webp",
-      title: "Comprometidos con nuestra gente",
-      subtitle: "Con tu ayuda, llevamos alimento a más hogares",
-      description: "¡Sé parte de esta causa solidaria y generosa!",
+      image: "/assets/images/beneficiarios/3.webp",
+      title: "Comprometidos con nuestra región",
+      subtitle: "Llegamos a 7 municipios con programas y alimentos",
+      description: "Construimos entornos saludables para un futuro mejor.",
       icon: FiHeart,
-      stats: { number: "25", label: "Comunidades atendidas" }
+      stats: { number: "7", label: "Municipios atendidos" }
     },
   ];
 

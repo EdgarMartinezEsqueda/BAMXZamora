@@ -28,36 +28,36 @@ const Donate = () => {
       label: "Cuenta BANBAJÍO",
       value: import.meta.env.VITE_cuenta || "1234567890",
       icon: FiCreditCard,
-      description: "Depósito directo en sucursal"
+      description: "Depósito directo en para cuentas BANBAJÍO"
     }
   ];
 
   const onlineMethods = [
-    {
-      id: "paypal",
-      label: "PayPal",
-      url: import.meta.env.VITE_paypal,
-      icon: "💙",
-      description: "Donación segura con PayPal",
-      color: "from-blue-500 to-blue-600"
-    }
+    // {
+    //   id: "paypal",
+    //   label: "PayPal",
+    //   url: import.meta.env.VITE_paypal,
+    //   icon: "💙",
+    //   description: "Donación segura con PayPal",
+    //   color: "from-blue-500 to-blue-600"
+    // }
   ];
 
   const impactStats = [
     {
-      number: "9,000+",
+      number: "10,000+",
       label: "Familias beneficiadas",
       icon: FiUsers,
       color: "text-blue-600"
     },
     {
-      number: "50+",
+      number: "70+",
       label: "Toneladas de alimentos",
       icon: FiTarget,
       color: "text-green-600"
     },
     {
-      number: "15+",
+      number: "7+",
       label: "Municipios atendidos",
       icon: FiGlobe,
       color: "text-purple-600"
@@ -89,7 +89,7 @@ const Donate = () => {
           </h1>
           
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Con tu apoyo, podemos continuar nuestra misión de combatir el hambre y brindar esperanza a quienes más lo necesitan en Los Altos de Jalisco y Zacatecas.
+            Con tu apoyo, podemos continuar nuestra misión de combatir el hambre y brindar esperanza a quienes más lo necesitan en Michoacán.
           </p>
         </div>
 
@@ -206,36 +206,42 @@ const Donate = () => {
             {/* Métodos online */}
             {selectedMethod === "online" && (
               <div className="grid gap-4">
-                {onlineMethods.map((method, index) => (
-                  <a
-                    key={method.id}
-                    href={method.url}
-                    Fitarget="_blank"
-                    rel="noopener noreferrer"
-                    className="block bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-all transform hover:-translate-y-1 group"
-                    style={{
-                      animation: `fadeInLeft 0.6s ease-out ${index * 0.1}s both`
-                    }}
-                  >
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center">
-                        <div className={`w-12 h-12 bg-gradient-to-r ${method.color} rounded-xl flex items-center justify-center text-2xl mr-4`}>
-                          {method.icon}
+                {onlineMethods.length === 0 ? (
+                  <p className="text-gray-600">
+                    Actualmente no hay métodos de donación en línea disponibles. Por favor, considera hacer una transferencia bancaria.
+                  </p>
+                ) : (
+                  onlineMethods.map((method, index) => (
+                    <a
+                      key={method.id}
+                      href={method.url}
+                      Fitarget="_blank"
+                      rel="noopener noreferrer"
+                      className="block bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-all transform hover:-translate-y-1 group"
+                      style={{
+                        animation: `fadeInLeft 0.6s ease-out ${index * 0.1}s both`
+                      }}
+                    >
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center">
+                          <div className={`w-12 h-12 bg-gradient-to-r ${method.color} rounded-xl flex items-center justify-center text-2xl mr-4`}>
+                            {method.icon}
+                          </div>
+                          <div>
+                            <h3 className="text-lg font-bold text-gray-900 group-hover:text-green-700 transition-colors">
+                              {method.label}
+                            </h3>
+                            <p className="text-sm text-gray-500">{method.description}</p>
+                          </div>
                         </div>
-                        <div>
-                          <h3 className="text-lg font-bold text-gray-900 group-hover:text-green-700 transition-colors">
-                            {method.label}
-                          </h3>
-                          <p className="text-sm text-gray-500">{method.description}</p>
+                        <div className="flex items-center text-green-600 group-hover:text-green-700">
+                          <span className="text-sm font-medium mr-2">Donar</span>
+                          <FiExternalLink className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                         </div>
                       </div>
-                      <div className="flex items-center text-green-600 group-hover:text-green-700">
-                        <span className="text-sm font-medium mr-2">Donar</span>
-                        <FiExternalLink className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                      </div>
-                    </div>
-                  </a>
-                ))}
+                    </a>
+                  ))
+                )}
               </div>
             )}
           </div>
@@ -264,20 +270,12 @@ const Donate = () => {
                 Tu Donación es Segura
               </h3>
               
-              <div className="space-y-4">
-                <div className="flex items-start">
-                  <FiCheck className="w-6 h-6 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-semibold text-gray-800">Transparencia Total</h4>
-                    <p className="text-gray-600 text-sm">Reportes mensuales de cómo se utilizan las donaciones</p>
-                  </div>
-                </div>
-                
+              <div className="space-y-4">                
                 <div className="flex items-start">
                   <FiCheck className="w-6 h-6 text-green-500 mr-3 mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-gray-800">Pagos Seguros</h4>
-                    <p className="text-gray-600 text-sm">Todas las transacciones están protegidas y encriptadas</p>
+                    <p className="text-gray-600 text-sm">Todas las transacciones están protegidas y encriptadas por tu banca en línea</p>
                   </div>
                 </div>
                 
@@ -291,19 +289,20 @@ const Donate = () => {
               </div>
             </div>
 
-            {/* Call to action final */}
-            <div className="bg-gradient-to-r from-green-600 to-yellow-500 rounded-3xl p-8 text-white text-center">
-              <FiHeart className="w-12 h-12 mx-auto mb-4 text-white" />
-              <h3 className="text-2xl font-bold mb-4">¡Gracias por tu generosidad!</h3>
-              <p className="text-lg opacity-90 mb-6">
-                Juntos estamos construyendo un futuro donde nadie pase hambre.
-              </p>
-              <div className="flex items-center justify-center text-sm opacity-80">
-                <span>Cada donación cuenta</span>
-                <FiChevronRight className="w-4 h-4 ml-1" />
-                <span>Cada familia importa</span>
-              </div>
-            </div>
+          </div>
+        </div>
+
+        {/* Call to action final */}
+        <div className="bg-gradient-to-r from-green-600 to-yellow-500 rounded-3xl p-8 text-white text-center mt-8">
+          <FiHeart className="w-12 h-12 mx-auto mb-4 text-white" />
+          <h3 className="text-2xl font-bold mb-4">¡Gracias por tu generosidad!</h3>
+          <p className="text-lg opacity-90 mb-6">
+            Juntos estamos construyendo un futuro donde nadie pase hambre.
+          </p>
+          <div className="flex items-center justify-center text-sm opacity-80">
+            <span>Cada donación cuenta</span>
+            <FiChevronRight className="w-4 h-4 ml-1" />
+            <span>Cada familia importa</span>
           </div>
         </div>
       </div>
