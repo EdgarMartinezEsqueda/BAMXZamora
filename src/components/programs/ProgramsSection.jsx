@@ -5,47 +5,46 @@ const MissionVision = () => {
   const programs = [
     {
       image: "assets/images/beneficiarios/6.webp",
-      title: "Apadrina una Familia",
-      description: "Conecta directamente con familias necesitadas y brinda apoyo continuo",
+      title: "Por - Hambre y + Sonrisas",
+      description: "Apadrina a personas en vulnerabilidad y ayúdanos a cubrir sus necesidades básicas de alimentación, salud y educación con seguimiento integral",
       icon: <FaGift />,
       color: "from-rojoLogo to-red-600",
       bgColor: "bg-rojoLogo/10",
       borderColor: "border-rojoLogo/20",
       link: "/programas#apadrinamiento",
-      stats: "2,500+ familias"
+      stats: "2,600+ familias"
     },
     {
       image: "assets/images/beneficiarios/2.webp",
-      title: "Voluntariado",
-      description: "Únete a nuestro equipo y contribuye activamente en la distribución",
+      title: "Voluntariado BAZAC",
+      description: "Sé parte del corazón de nuestras acciones. Dona tu tiempo, talento y energía en clasificación de alimentos, eventos y campañas de sensibilización",
       icon: <FaHandshake />,
       color: "from-verdeLogo to-green-600",
       bgColor: "bg-verdeLogo/10",
       borderColor: "border-verdeLogo/20",
       link: "/programas#voluntariado",
-      stats: "500+ voluntarios"
+      stats: "70 grupos comunitarios"
     },
     {
       image: "assets/images/beneficiarios/3.webp",
-      title: "Servicio Social",
-      description: "Programas formativos para estudiantes comprometidos con la comunidad",
+      title: "Talleres BAZAC",
+      description: "Participa en talleres y actividades formativas mensuales que fortalecen el bienestar, la autosuficiencia y el desarrollo integral de la comunidad",
       icon: <FaHandsHelping />,
       color: "from-amarilloLogo to-yellow-600",
       bgColor: "bg-amarilloLogo/10",
       borderColor: "border-amarilloLogo/20",
-      link: "/programas#servicio-social",
-      stats: "200+ estudiantes"
+      link: "/programas#talleres",
+      stats: "Gratuitos o costo simbólico"
     },
     {
       image: "assets/images/beneficiarios/4.webp",
-      title: "Programas Especiales",
-      description: "Descubre todas nuestras iniciativas y cómo puedes participar",
+      title: "Comedor Comunitario",
+      description: "Espacio solidario que ofrece desayunos nutritivos y accesibles, apoyando a personas vulnerables y fortaleciendo la seguridad alimentaria comunitaria",
       icon: <FaHandHoldingHeart />,
       color: "from-purple-500 to-purple-700",
       bgColor: "bg-purple-50",
       borderColor: "border-purple-200",
-      link: "/programas",
-      stats: "Ver todos",
+      link: "/programas#comedor",
       isSpecial: true
     }
   ];
@@ -87,7 +86,7 @@ const MissionVision = () => {
           </h2>
           
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Conoce las iniciativas con las que llevamos alimento y esperanza a miles de familias en Los Altos de Jalisco
+            Conoce las iniciativas con las que llevamos alimento y esperanza a miles de familias en la región.
           </p>
         </div>
 
@@ -118,9 +117,11 @@ const MissionVision = () => {
                 </div>
                 
                 {/* Badge de estadísticas */}
-                <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-sm rounded-xl px-3 py-2">
-                  <span className="text-gray-800 font-semibold text-sm">{program.stats}</span>
-                </div>
+                { program.stats &&
+                  <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-sm rounded-xl px-3 py-2">
+                    <span className="text-gray-800 font-semibold text-sm">{program.stats}</span>
+                  </div>
+                }
               </div>
 
               {/* Contenido */}

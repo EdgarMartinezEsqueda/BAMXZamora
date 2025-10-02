@@ -1,6 +1,6 @@
-import { FaArrowRight, FaDonate, FaFirstAid, FaGift, FaHandsHelping, FaHeartbeat, FaUtensils } from "react-icons/fa";
+import { FaArrowRight, FaBook, FaChalkboardTeacher, FaDonate, FaFirstAid, FaGift, FaHandsHelping, FaHeartbeat, FaPalette, FaUtensils } from "react-icons/fa";
 
-const iconMap = { FaHandsHelping, FaGift, FaDonate, FaFirstAid, FaHeartbeat, FaUtensils };
+const iconMap = { FaHandsHelping, FaGift, FaDonate, FaFirstAid, FaHeartbeat, FaUtensils, FaChalkboardTeacher, FaPalette, FaBook };
 
 const ProgramList = ({ programas, activeId, onSelect }) => {
     return (

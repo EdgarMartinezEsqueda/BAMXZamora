@@ -1,6 +1,6 @@
 import FAQAccordion from "components/faqs/FAQAccordion";
 import MediaRenderer from "components/media/MediaRenderer";
-import { FaArrowRight, FaCheck, FaChevronDown, FaClock, FaDonate, FaFirstAid, FaGift, FaHandsHelping, FaHeartbeat, FaMapMarkerAlt, FaUsers, FaUtensils } from "react-icons/fa";
+import { FaArrowRight, FaBook, FaChalkboardTeacher, FaCheck, FaChevronDown, FaClock, FaDonate, FaFirstAid, FaGift, FaHandsHelping, FaHeartbeat, FaMapMarkerAlt, FaPalette, FaUsers, FaUtensils } from "react-icons/fa";
 
 const ProgramDetail = ({ program, activeAccordion, toggleAccordion, isLoading }) => {
   if (isLoading) {
@@ -16,7 +16,7 @@ const ProgramDetail = ({ program, activeAccordion, toggleAccordion, isLoading })
     );
   }
 
-  const iconMap = { FaHandsHelping, FaGift, FaDonate, FaFirstAid, FaHeartbeat, FaUtensils };
+  const iconMap = { FaHandsHelping, FaGift, FaDonate, FaFirstAid, FaHeartbeat, FaUtensils, FaBook, FaPalette, FaChalkboardTeacher };
   const IconComponent = iconMap[program.iconName];
 
   return (
