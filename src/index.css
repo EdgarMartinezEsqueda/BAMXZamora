@@ -43,6 +43,10 @@
     font-weight: 700; /* Asume bold si no hay otros pesos */
 }
 
+button{
+  cursor: pointer;
+}
+
 @theme{
     --color-rojoLogo: #ed1a3b;
     --color-verdeLogo: #0db14c;
@@ -217,7 +221,7 @@ html {
   }
   /* BG para el breadcrumb */
   .bg-breadcrumb {
-    background-image: url("/assets/images/beneficiarios/8.webp");
+    background-image: url("/assets/images/beneficiarios/11.webp");
     background-size: cover;
     background-position: center;
   }
