@@ -2,7 +2,7 @@ import ContactBanner from "components/contact/ContactBanner";
 import { programas } from "components/programs/programasData";
 import ProgramDetail from "components/programs/ProgramDetail";
 import ProgramList from "components/programs/ProgramList";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaUsers } from "react-icons/fa";
 import { useLocation, useNavigate } from "react-router";
 
@@ -10,12 +10,28 @@ const Programas = () => {
   const location = useLocation();
   const navigate = useNavigate();
   
-  const hash = location.hash.replace("#", "");
-  const initialActiveId = programas.find(p => p.id === hash) ? hash : programas[0].id;
-  
-  const [activeId, setActiveId] = useState(initialActiveId);
+  const [activeId, setActiveId] = useState(programas[0].id);
   const [activeAccordion, setActiveAccordion] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
+
+  // Efecto para manejar cambios en el hash de la URL
+  useEffect(() => {
+    const hash = location.hash.replace("#", "");
+    if (hash) {
+      const programExists = programas.find(p => p.id === hash);
+      if (programExists) {
+        setActiveId(hash);
+        
+        // Scroll suave a la sección después de un pequeño delay
+        setTimeout(() => {
+          const programasSection = document.getElementById("programas-section");
+          if (programasSection) {
+            programasSection.scrollIntoView({ behavior: "smooth" });
+          }
+        }, 100);
+      }
+    }
+  }, [location.hash, location.pathname]);
 
   const handleSelect = (id) => {
     setIsLoading(true);
@@ -23,7 +39,7 @@ const Programas = () => {
     navigate(`#${id}`, { replace: true });
     
     // Simular loading para transición suave
-    setTimeout(() => setIsLoading(false), 300);
+    setTimeout(() => setIsLoading(false), 100);
     
     const programasSection = document.getElementById("programas-section");
     if (programasSection) {
