@@ -4,80 +4,73 @@ import FAQAccordion from "./FAQAccordion";
 
 import { FaHandHoldingHeart, FaUtensils } from "react-icons/fa";
 
-
 const preguntas = [
   {
-    question: "¿Qué es un banco de alimentos?",
-    answer: "Es una organización sin fines de lucro que rescata y distribuye alimentos a personas en situación vulnerable, a través de programas sociales y voluntariado.",
+    question: "¿Qué es el Banco de Alimentos de Zamora A.C.?",
+    answer: "Es una organización con más de 13 años de trabajo en la región, comprometida en rescatar, clasificar y distribuir alimentos a familias en situación vulnerable, además de implementar programas sociales y comunitarios.",
     category: "general",
     icon: FiHelpCircle
   },
   {
     question: "¿Cómo puedo donar alimentos?",
-    answer: "Puedes traer alimentos no perecederos a nuestras instalaciones o depositarlos en los puntos de recolección. También aceptamos frutas, verduras y pan del día.",
+    answer: "Puedes llevar alimentos no perecederos a nuestras instalaciones o puntos de recolección. También recibimos frutas, verduras, pan del día y excedentes de empresas aliadas.",
     category: "donacion",
     icon: FaUtensils
   },
   {
     question: "¿Aceptan donaciones monetarias?",
-    answer: "Sí. Las donaciones económicas son fundamentales para cubrir gastos operativos, transporte y compra de alimentos específicos que escasean.",
+    answer: "Sí, las donaciones económicas son esenciales para cubrir transporte, operación y compra de alimentos que escasean. Puedes donar de manera individual o como empresa.",
     category: "donacion",
     icon: FiHeart
   },
   {
-    question: "¿Son una donataria autorizada?",
-    answer: "Sí, somos una donataria autorizada por el SAT, lo que significa que podemos emitir recibos deducibles de impuestos a empresas y personas físicas que realicen donativos. Esto representa un beneficio fiscal directo para quienes apoyan nuestra causa.",
+    question: "¿Puedo recibir un comprobante fiscal por mi donación?",
+    answer: "Sí, como donataria autorizada por el SAT podemos emitir recibos deducibles de impuestos para personas físicas y empresas.",
     category: "donacion",
     icon: FiHome
   },
   {
-    question: "¿Qué alimentos se pueden donar?",
-    answer: "Principalmente no perecederos como arroz, frijol, aceite, atún, lentejas, galletas, leche en polvo. También aceptamos productos frescos en buen estado.",
-    category: "donacion",
-    icon: FaUtensils
-  },
-  {
-    question: "¿Cómo puedo ser voluntario?",
-    answer: "Puedes sumarte como voluntario ayudando en almacén, armando despensas, selección de alimentos o entrega de despensas. Contáctanos por llamada, correo o en persona.",
-    category: "voluntario",
-    icon: FaHandHoldingHeart
-  },
-  {
     question: "¿Qué programas tienen activos?",
-    answer: "Apadrina una Familia, Voluntariado, Voluntarios al Volante y Comer en Familia. Todos enfocados en mejorar la nutrición y calidad de vida.",
+    answer: "Actualmente contamos con Comedor Comunitario BAZAC, Apadrinamientos 'Por menos hambre y más sonrisas', Talleres comunitarios, Voluntariado y campañas como Abrigando Corazones, Pequeñas Sonrisas y el Rescatón.",
     category: "general",
     icon: FiUsers
   },
   {
+    question: "¿Cómo puedo ser voluntario?",
+    answer: "Puedes unirte apoyando en clasificación de alimentos, armado de despensas, actividades comunitarias o en nuestras campañas. Solo necesitas disposición y ganas de ayudar.",
+    category: "voluntario",
+    icon: FaHandHoldingHeart
+  },
+  {
+    question: "¿Cómo funciona el programa de apadrinamiento?",
+    answer: "A través de 'Por menos hambre y más sonrisas' puedes apoyar directamente a un caso vulnerable cubriendo sus necesidades básicas de alimentación, salud y educación, mientras nosotros damos seguimiento integral.",
+    category: "donacion",
+    icon: FiHeart
+  },
+  {
     question: "¿Cómo solicito apoyo alimentario?",
-    answer: "Acércate a nuestro equipo de trabajo social. Evaluamos tu situación y, si cumples los criterios, te incluimos en nuestro padrón de beneficiarios, solo necesitamos una identificación oficial, CURP y comprobante de domicilio reciente.",
+    answer: "Debes acercarte a nuestro equipo de trabajo social. Evaluamos cada caso y, si cumples los criterios, se te incluye en el padrón de beneficiarios. Necesitas identificación oficial, CURP y comprobante de domicilio.",
     category: "beneficiario",
     icon: FiUsers
   },
   {
-    question: "¿Puedo hacer mi servicio social con ustedes?",
-    answer: "Sí. Recibimos estudiantes de distintas carreras. Si hay convenio con tu escuela, puedes hacer tu servicio aquí apoyando en en área que más se te acomode.",
-    category: "voluntario",
-    icon: FaHandHoldingHeart
-  },
-  {
-    question: "¿Qué hacen para garantizar la calidad de los alimentos?",
-    answer: "Todo lo que recibimos es clasificado, revisado y almacenado bajo normas de seguridad alimentaria. Solo distribuimos alimentos aptos para consumo.",
-    category: "general",
-    icon: FaUtensils
-  },
-  {
-    question: "¿Tienen algún impacto ambiental?",
-    answer: "Sí. Reducimos el desperdicio de alimentos y promovemos un consumo más consciente y sostenible.",
+    question: "¿Qué impacto tiene su labor?",
+    answer: "Cada mes entregamos más de 70,000 kg de alimentos a más de 10,000 familias en Zamora y municipios aledaños, reduciendo la inseguridad alimentaria y promoviendo hábitos más saludables.",
     category: "general",
     icon: FiHelpCircle
   },
   {
+    question: "¿Qué hacen con los alimentos rescatados?",
+    answer: "Son clasificados y revisados bajo normas de seguridad alimentaria. Solo distribuimos lo que es apto para consumo, reduciendo el desperdicio y cuidando el medio ambiente.",
+    category: "general",
+    icon: FaUtensils
+  },
+  {
     question: "¿Puedo donar en nombre de una empresa?",
-    answer: "Claro. Las empresas pueden donar alimentos, recursos económicos o incluso prestar sus vehículos en el programa Empresas al Volante.",
+    answer: "Sí, las empresas pueden aportar alimentos, donaciones económicas o participar en campañas. Además, pueden sumarse prestando vehículos o voluntarios para distribución.",
     category: "donacion",
     icon: FiHome
-  },
+  }
 ];
 
 const categories = [
@@ -127,7 +120,7 @@ const FAQs = () => {
           </h2>
           
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Todo lo que necesitas saber sobre cómo apoyar o recibir ayuda del Banco Diocesano de Alimentos de los Altos.
+            Todo lo que necesitas saber sobre cómo apoyar o recibir ayuda del  Banco de Alimentos de Zamora A. C.
           </p>
         </div>
 

@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 const historyData = [
   {
-    year: "2007",
+    year: "2013",
     title: "Los Primeros Pasos",
     description:
       "El Banco Diocesano de Alimentos de Tepatitlán se funda, marcando el inicio de una misión para combatir el hambre en nuestra comunidad.",
@@ -92,7 +92,7 @@ const History = () => {
           </div>
           <p className="text-gray-600 max-w-3xl mx-auto mt-6 text-lg leading-relaxed">
             Cada año ha sido un paso más hacia nuestra misión de combatir el hambre 
-            y fortalecer nuestra comunidad en Los Altos de Jalisco.
+            y fortalecer nuestra comunidad en Michoacán.
           </p>
         </div>
 
@@ -112,13 +112,13 @@ const History = () => {
               1280: { slidesPerView: 3, spaceBetween: 35 },
             }}
             navigation={{
-              nextEl: '.history-next',
-              prevEl: '.history-prev',
+              nextEl: ".history-next",
+              prevEl: ".history-prev",
             }}
             pagination={{ 
               clickable: true,
               dynamicBullets: true,
-              el: '.history-pagination'
+              el: ".history-pagination"
             }}
             autoplay={{
               delay: 4000,
@@ -148,7 +148,7 @@ const History = () => {
                     {/* Número de orden */}
                     <div className="absolute top-4 right-4">
                       <div className="w-8 h-8 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white font-bold text-sm">
-                        {String(index + 1).padStart(2, '0')}
+                        {String(index + 1).padStart(2, "0")}
                       </div>
                     </div>
 

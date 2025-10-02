@@ -129,11 +129,11 @@ export const programas = [
     id: "beneficiarios",
     iconName: "FaFirstAid",
     title: "Padrón de Beneficiarios",
-    description: "Si tú o alguien que conoces necesita apoyo alimentario, pueden acercarse al banco de alimentos para unirse al padrón. Atendemos a más de 2,600 familias en 70 grupos comunitarios distribuidos en 7 municipios: Zamora, Jacona, Tangancícuaro, Ixtlán, Chavinda, Santiago y Chilchota. Nuestro equipo te guiará en el proceso de registro.",
+    description: "Si tú o alguien que conoces necesita apoyo alimentario, pueden acercarse al banco de alimentos para unirse al padrón. Atendemos a más de 10,000 familias en 70 grupos comunitarios distribuidos en 7 municipios: Zamora, Jacona, Tangancícuaro, Ixtlán, Chavinda, Santiago y Chilchota. Nuestro equipo te guiará en el proceso de registro.",
     keyPoints: [
       "Proceso de registro sencillo y confidencial",
       "Entrega mensual de apoyos alimentarios nutritivos",
-      "Más de 70,124 kg de alimentos entregados mensualmente entre 2,600 familias",
+      "Más de 70,124 kg de alimentos entregados mensualmente entre 10,000 familias",
       "Acceso a programas de desarrollo biopsicosocial"
     ],
     media: {

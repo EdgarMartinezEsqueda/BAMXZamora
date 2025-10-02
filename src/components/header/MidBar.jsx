@@ -2,11 +2,11 @@ import React from "react";
 import { FiClock, FiMapPin, FiPhone } from "react-icons/fi";
 
 const MidBar = () => (
-  <div className="max-lg:hidden bg-navbar-bg py-5 px-6 lg:px-10 xl:px-32 ">
+  <div className="max-lg:hidden bg-navbar-bg py-4 px-6 lg:px-10 xl:px-32 ">
     <div className="flex flex-col lg:flex-row justify-between items-center max-w-7xl mx-auto gap-6">
       {/* Logo */}
       <a href="/" className="shrink-0">
-        <img src="/assets/images/logo.png" alt="Logo" className="h-14" />
+        <img src="/assets/images/zamora.webp" alt="Logo" className="h-16" />
       </a>
 
       {/* Info Blocks */}

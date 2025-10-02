@@ -31,7 +31,7 @@ const AboutSection = () => {
   const tabContent = {
     Tab1: [
       "Rescatar, distribuir y canalizar alimentos a quienes más lo necesitan.",
-      "Atendemos a más de 2,600 familias beneficiarias cada mes.",
+      "Atendemos a más de 10,000 familias beneficiarias cada mes.",
       "Promovemos programas biopsicosociales para mejorar la calidad de vida."
     ],
     Tab2: [
@@ -47,7 +47,7 @@ const AboutSection = () => {
   };
 
   const stats = [
-    { number: "2,600+", label: "Familias beneficiadas cada mes" },
+    { number: "2,600+", label: "Familias beneficiadas cada mes en Zamora" },
     { number: "70+", label: "Grupos comunitarios" },
     { number: "70,000+ kg", label: "Alimentos entregados mensualmente" }
   ];
@@ -104,7 +104,7 @@ const AboutSection = () => {
                 className="absolute right-28 top-5 hidden lg:block opacity-80 animate-pulse"
               />
 
-              {/* Badge "Desde 2007" mejorado */}
+              {/* Badge "Desde 2013" mejorado */}
               <div className="absolute -left-12 bottom-0 w-52 h-52 flex flex-col items-center justify-center z-10 sm:left-0 sm:w-36 sm:h-36 group/badge">
                 <div className="relative text-center transform transition-transform duration-300 group-hover/badge:scale-110">
                   <img 
@@ -113,7 +113,7 @@ const AboutSection = () => {
                     className="absolute inset-0 w-full h-full -z-10 filter drop-shadow-lg"
                   />
                   <h2 className="text-white font-edu-hand text-xl uppercase drop-shadow-md">Desde</h2>
-                  <h3 className="text-amarilloLogo text-5xl font-bold mt-1 drop-shadow-lg">2007</h3>
+                  <h3 className="text-amarilloLogo text-5xl font-bold mt-1 drop-shadow-lg">2013</h3>
                 </div>
               </div>
             </div>
@@ -126,7 +126,7 @@ const AboutSection = () => {
               <div className="mb-6">
                 <h2 className="text-verdeLogo font-edu-hand text-xl font-semibold mb-3 flex items-center justify-center lg:justify-start gap-2">
                   <span className="w-2 h-2 bg-amarilloLogo rounded-full animate-pulse"></span>
-                  Alimentando esperanza en los Altos de Jalisco.
+                  Alimentando esperanza en Michoacán.
                 </h2>
 
                 <h3 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight mb-4 text-gray-800">
@@ -147,7 +147,7 @@ const AboutSection = () => {
 
               {/* Descripción mejorada */}
               <p className="text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0 text-balance leading-relaxed text-lg">
-                En el <span className="font-semibold text-verdeLogo">BAMX Zamora</span> trabajamos cada día para llevar alimentos, dignidad y esperanza a más de <span className="font-semibold text-amarilloLogo">9,000 familias</span>. Juntos, con la ayuda de aliados y voluntarios, construimos una región más solidaria.
+                En el <span className="font-semibold text-verdeLogo">BAMX Zamora</span> trabajamos cada día para llevar alimentos, dignidad y esperanza a más de <span className="font-semibold text-amarilloLogo">10,000 familias</span>. Juntos, con la ayuda de aliados y voluntarios, construimos una región más solidaria.
               </p>
 
               {/* Stats destacados */}
@@ -205,7 +205,7 @@ const AboutSection = () => {
                       
                       {/* Botón de play mejorado */}
                       <a 
-                        href="https://drive.google.com/file/d/1MOLsJYjUikDTGME5J-GIB1zskrC5U-lc/preview" 
+                        href="https://www.youtube.com/embed/WSaNPe_lJEQ?si=RSvSs7gGaNzYp4JR" 
                         className="absolute inset-0 flex items-center justify-center group/play"
                         target="_blank"
                         rel="noopener noreferrer"

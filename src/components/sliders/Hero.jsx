@@ -12,9 +12,9 @@ const HeroSlider = () => {
       image: "/assets/images/beneficiarios/4.webp",
       title: "Rescatamos alimentos, alimentamos vidas",
       subtitle: "Más de 70 mil kg de alimentos entregados cada mes",
-      description: "Apoyamos a más de 2,600 familias con dignidad y esperanza.",
+      description: "Apoyamos a más de 10,000 familias con dignidad y esperanza.",
       icon: FiHeart,
-      stats: { number: "2,600+", label: "Familias beneficiadas" }
+      stats: { number: "10,000+", label: "Familias beneficiadas" }
     },
     {
       image: "/assets/images/beneficiarios/17.webp",
@@ -82,9 +82,9 @@ const HeroSlider = () => {
 
                       {/* Título principal */}
                       <h1 className="text-white text-4xl md:text-5xl lg:text-7xl font-bold leading-tight animate-slide-up">
-                        <span className="block">{slide.subtitle.split(',')[0]}</span>
+                        <span className="block">{slide.subtitle.split(",")[0]}</span>
                         <span className="block text-amarilloLogo mt-2">
-                          {slide.subtitle.split(',')[1] || ''}
+                          {slide.subtitle.split(",")[1] || ""}
                         </span>
                       </h1>
 

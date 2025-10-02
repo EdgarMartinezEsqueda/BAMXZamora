@@ -64,12 +64,12 @@ const Beneficiaries = () => {
 
   useEffect(() => {
     const handleKeyPress = (e) => {
-      if (e.key === 'ArrowLeft') prevSlide();
-      if (e.key === 'ArrowRight') nextSlide();
+      if (e.key === "ArrowLeft") prevSlide();
+      if (e.key === "ArrowRight") nextSlide();
     };
 
-    document.addEventListener('keydown', handleKeyPress);
-    return () => document.removeEventListener('keydown', handleKeyPress);
+    document.addEventListener("keydown", handleKeyPress);
+    return () => document.removeEventListener("keydown", handleKeyPress);
   }, [isAnimating]);
 
   // Auto-play opcional
@@ -183,8 +183,8 @@ const Beneficiaries = () => {
                     onClick={() => goToSlide(index)}
                     className={`transition-all duration-300 ${
                       index === currentSlide
-                        ? 'w-8 h-2 bg-white rounded-full'
-                        : 'w-2 h-2 bg-white/60 hover:bg-white/80 rounded-full'
+                        ? "w-8 h-2 bg-white rounded-full"
+                        : "w-2 h-2 bg-white/60 hover:bg-white/80 rounded-full"
                     }`}
                   />
                 ))}
@@ -210,15 +210,15 @@ const Beneficiaries = () => {
                   key={index}
                   className={`relative flex items-start p-4 rounded-2xl cursor-pointer transition-all duration-300 ${
                     isActive 
-                      ? 'bg-gradient-to-r from-blue-50 to-green-50 border-2 border-blue-200 shadow-lg transform scale-105' 
-                      : 'bg-white hover:bg-gray-50 border border-gray-200 hover:shadow-md'
+                      ? "bg-gradient-to-r from-blue-50 to-green-50 border-2 border-blue-200 shadow-lg transform scale-105" 
+                      : "bg-white hover:bg-gray-50 border border-gray-200 hover:shadow-md"
                   }`}
                   onClick={() => goToSlide(index)}
                 >
                   <div className={`flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center transition-colors ${
                     isActive 
-                      ? 'bg-gradient-to-r from-blue-500 to-green-500 text-white' 
-                      : 'bg-gray-100 text-gray-600'
+                      ? "bg-gradient-to-r from-blue-500 to-green-500 text-white" 
+                      : "bg-gray-100 text-gray-600"
                   }`}>
                     {isActive ? (
                       <span className="text-lg font-bold">{index + 1}</span>
@@ -229,12 +229,12 @@ const Beneficiaries = () => {
                   
                   <div className="ml-4 flex-1">
                     <h4 className={`font-semibold text-lg mb-1 transition-colors ${
-                      isActive ? 'text-blue-700' : 'text-gray-800'
+                      isActive ? "text-blue-700" : "text-gray-800"
                     }`}>
                       {step.title}
                     </h4>
                     <p className={`transition-colors ${
-                      isActive ? 'text-blue-600' : 'text-gray-600'
+                      isActive ? "text-blue-600" : "text-gray-600"
                     }`}>
                       {step.description}
                     </p>

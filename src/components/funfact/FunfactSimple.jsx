@@ -178,9 +178,9 @@ const FunFactSimple = () => {
                 <div
                   key={index}
                   className={`relative group p-6 md:p-8 text-center flex flex-col items-center justify-center gap-3 hover:bg-white/5 transition-all duration-500 border-r border-b border-white/10 last:border-r-0 lg:last:border-r lg:odd:border-r-0 ${
-                    index >= 3 ? 'border-b-0' : ''
+                    index >= 3 ? "border-b-0" : ""
                   } ${
-                    index === facts.length - 1 ? 'lg:col-span-1' : ''
+                    index === facts.length - 1 ? "lg:col-span-1" : ""
                   }`}
                   style={{
                     animationDelay: `${index * 100}ms`

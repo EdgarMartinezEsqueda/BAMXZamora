@@ -9,24 +9,52 @@ const municipiosData = [
   { 
     nombre: "Zamora", 
     estado: "Michoacán",
-    comunidades: 15,
-    familias: 2500,
+    comunidades: 23,
+    familias: 2900,
     tipo: "sede"
   },
   { 
-    nombre: "Arandas", 
-    estado: "Jalisco",
-    comunidades: 8,
-    familias: 850,
+    nombre: "Ixtlán", 
+    estado: "Michoacán",
+    comunidades: 7,
+    familias: 1500,
     tipo: "regular"
   },
   { 
-    nombre: "Nochistlán", 
-    estado: "Zacatecas",
-    comunidades: 4,
-    familias: 435,
-    tipo: "expansion"
-  }
+    nombre: "Chavinda", 
+    estado: "Michoacán",
+    comunidades: 5,
+    familias: 500,
+    tipo: "regular"
+  },
+  { 
+    nombre: "Jacona", 
+    estado: "Michoacán",
+    comunidades: 13,
+    familias: 2100,
+    tipo: "regular"
+  },
+  { 
+    nombre: "Santiago Tangamandapio", 
+    estado: "Michoacán",
+    comunidades: 5,
+    familias: 700,
+    tipo: "regular"
+  },
+  { 
+    nombre: "Tangacicuaro", 
+    estado: "Michoacán",
+    comunidades: 11,
+    familias: 1400,
+    tipo: "regular"
+  },
+  { 
+    nombre: "Chilchota", 
+    estado: "Michoacán",
+    comunidades: 6,
+    familias: 900,
+    tipo: "regular"
+  },
 ];
 
 const options = {
@@ -49,7 +77,7 @@ const options = {
   },
   mapView: {
     zoom: 0.5,
-    center: [ 289,200], // ajusta coordenadas (long, lat) al centro de Jalisco
+    center: [ 289,200], // ajusta coordenadas (long, lat) al centro de Michoacan
   },
   mapNavigation: {
     enabled: false, // bloquea botones de zoom y arrastre
@@ -89,8 +117,8 @@ const MapaConMapa = () => {
         <div className="space-y-4 mb-8">
           <p className="text-gray-800 text-lg leading-relaxed">
             Gracias a la dedicación de nuestro equipo y al respaldo de empresas, voluntarios y aliados, hoy llegamos a más de{" "}
-            <span className="font-bold text-rojoLogo bg-rojoLogo/10 px-2 py-1 rounded-lg">90 comunidades</span>{" "}
-            en 14 municipios —13 en Jalisco y 1 en Zacatecas— llevando alimentos, apoyo y esperanza a miles de familias.
+            <span className="font-bold text-rojoLogo bg-rojoLogo/10 px-2 py-1 rounded-lg">70 grupos comunitarios</span>{" "}
+            en 7 municipios de Michoacán, llevando alimentos, apoyo y esperanza a miles de familias.
           </p>
 
           <p className="text-gray-700 text-lg leading-relaxed">
@@ -102,15 +130,15 @@ const MapaConMapa = () => {
         {/* Estadísticas rápidas */}
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
           <div className="bg-white rounded-xl p-4 shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300">
-            <div className="text-2xl font-bold text-verdeLogo">14</div>
+            <div className="text-2xl font-bold text-verdeLogo">7</div>
             <div className="text-sm text-gray-600">Municipios</div>
           </div>
           <div className="bg-white rounded-xl p-4 shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300">
-            <div className="text-2xl font-bold text-amarilloLogo">90+</div>
-            <div className="text-sm text-gray-600">Comunidades</div>
+            <div className="text-2xl font-bold text-amarilloLogo">70+</div>
+            <div className="text-sm text-gray-600">Grupos comunitarios</div>
           </div>
           <div className="bg-white rounded-xl p-4 shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300 sm:col-span-1 col-span-2">
-            <div className="text-2xl font-bold text-rojoLogo">9,000+</div>
+            <div className="text-2xl font-bold text-rojoLogo">10,000+</div>
             <div className="text-sm text-gray-600">Familias beneficiadas</div>
           </div>
         </div>
@@ -176,7 +204,7 @@ const MapaSinMapa = () => {
         </h3>
 
         <p className="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
-          Nuestra red solidaria se extiende por Los Altos de Jalisco y parte de Zacatecas, 
+          Nuestra red solidaria se extiende por Zamora y municipios aledaños de Michoacán, 
           llevando esperanza y alimentos a comunidades rurales y urbanas.
         </p>
       </div>
@@ -187,7 +215,7 @@ const MapaSinMapa = () => {
           <FaMapMarkerAlt className="text-4xl mb-3 mx-auto opacity-80" />
           <div className="text-3xl font-bold mb-2">{municipiosData.length} Municipios</div>
           <div className="text-verdeLogo/20 text-sm uppercase tracking-wider">Municipios</div>
-          <div className="text-sm mt-2 opacity-90">13 en Jalisco, 1 en Zacatecas</div>
+          <div className="text-sm mt-2 opacity-90">Todos en Michoacán</div>
         </div>
         
         <div className="bg-gradient-to-br from-amarilloLogo to-amarilloLogo/80 text-white rounded-2xl p-6 text-center shadow-xl">
@@ -211,8 +239,7 @@ const MapaSinMapa = () => {
           {[
             { id: "todos", label: "Todos", icon: "🏘️" },
             { id: "sede", label: "Sede Principal", icon: "🏛️" },
-            { id: "regular", label: "Jalisco", icon: "🌮" },
-            { id: "expansion", label: "Zacatecas", icon: "⛰️" }
+            { id: "regular", label: "Municipios", icon: "🏘️" }
           ].map((filter) => (
             <button
               key={filter.id}
@@ -242,8 +269,7 @@ const MapaSinMapa = () => {
             <div className="mb-4">
               <div className="flex items-center justify-between mb-2">
                 <div className={`w-3 h-3 rounded-full ${
-                  municipio.tipo === 'sede' ? 'bg-rojoLogo' :
-                  municipio.tipo === 'expansion' ? 'bg-purple-500' : 'bg-verdeLogo'
+                  municipio.tipo === "sede" ? "bg-rojoLogo" : "bg-verdeLogo"
                 }`}></div>
                 <span className="text-xs text-gray-500 uppercase tracking-wider">
                   {municipio.estado}
@@ -254,7 +280,7 @@ const MapaSinMapa = () => {
                 {municipio.nombre}
               </h4>
               
-              {municipio.tipo === 'sede' && (
+              {municipio.tipo === "sede" && (
                 <span className="inline-block bg-rojoLogo/10 text-rojoLogo px-2 py-1 rounded-full text-xs font-medium mt-1">
                   Sede Principal
                 </span>
@@ -311,7 +337,7 @@ const Mapa = ({ conMapa = true }) => {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden">
+    <section className="py-16 relative overflow-hidden">
       {/* Elementos decorativos */}
       <div className="absolute top-20 left-10 w-20 h-20 bg-verdeLogo/10 rounded-full blur-xl"></div>
       <div className="absolute bottom-20 right-10 w-32 h-32 bg-amarilloLogo/10 rounded-full blur-xl"></div>
@@ -324,8 +350,8 @@ const Mapa = ({ conMapa = true }) => {
             <div className="flex items-center gap-3">
               <div className={`flex items-center gap-2 px-4 py-2 rounded-xl transition-all duration-300 ${
                 vistaActual 
-                  ? 'bg-verdeLogo text-white shadow-md' 
-                  : 'text-gray-600 hover:bg-gray-50'
+                  ? "bg-verdeLogo text-white shadow-md" 
+                  : "text-gray-600 hover:bg-gray-50"
               }`}>
                 <FaMap className="text-sm" />
                 <span className="font-medium text-sm">Vista Mapa</span>
@@ -346,8 +372,8 @@ const Mapa = ({ conMapa = true }) => {
               
               <div className={`flex items-center gap-2 px-4 py-2 rounded-xl transition-all duration-300 ${
                 !vistaActual 
-                  ? 'bg-verdeLogo text-white shadow-md' 
-                  : 'text-gray-600 hover:bg-gray-50'
+                  ? "bg-verdeLogo text-white shadow-md" 
+                  : "text-gray-600 hover:bg-gray-50"
               }`}>
                 <FaThLarge className="text-sm" />
                 <span className="font-medium text-sm">Vista Detalles</span>

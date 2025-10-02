@@ -2,7 +2,7 @@ import { FiArrowRight, FiAward, FiCheck, FiHeart, FiMapPin, FiPlay, FiTrendingUp
 
 const AboutSection = () => {
   const stats = [
-    { number: "2,600+", label: "Familias beneficiadas", icon: FiUsers, color: "text-verdeLogo" },
+    { number: "10,000+", label: "Familias beneficiadas", icon: FiUsers, color: "text-verdeLogo" },
     { number: "7", label: "Municipios atendidos", icon: FiMapPin, color: "text-amarilloLogo" },
     { number: "70,000+", label: "Kg de alimentos al mes", icon: FiTrendingUp, color: "text-rojoLogo" }
   ];

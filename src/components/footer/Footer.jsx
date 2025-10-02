@@ -25,10 +25,10 @@ const Footer = () => {
   ];
 
   const services = [
-    { title: "Servicio Social", link: "/programas#servicio-social" },
-    { title: "Apadrina una familia", link: "/programas#apadrinamiento" },
-    { title: "Voluntarios al volante", link: "/programas#voluntarios-al-volante" },
-    { title: "Únete a nuestro padrón de beneficiarios", link: "/beneficiarios" },
+    { title: "Padrón de Beneficiarios", link: "/programas#beneficiarios" },
+    { title: "Apadrinamiento", link: "/programas#apadrinamiento" },
+    { title: "Comedor comunitario", link: "/programas#comedor-comunitario" },
+    { title: "Talleres", link: "/programas#talleres-bazac" },
   ];
 
   const usefulLinks = [
@@ -128,7 +128,7 @@ const Footer = () => {
           {/* Logo del Banco */}
           <div className="relative">
             <img
-              src="/assets/images/logoModoOscuro.png"
+              src="/assets/images/zamora.webp"
               alt="Logo Banco de Alimentos"
               className="h-14 object-contain"
             />
@@ -159,7 +159,7 @@ const Footer = () => {
       {/* Footer inferior */}
       <div className="py-6">
         <div className="container mx-auto px-4 text-center text-sm text-gray-200">
-          &copy; {new Date().getFullYear()}{" "} <a href="/" className="text-amarilloLogo font-medium"> Banco de Alimento de Zamora A. C. </a>{" "} - Todos los derechos reservados.
+          &copy; {new Date().getFullYear()}{" "} <a href="/" className="text-amarilloLogo font-medium"> Banco de Alimentos de Zamora A. C. </a>{" "} - Todos los derechos reservados.
         </div>
       </div>
 

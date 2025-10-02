@@ -41,7 +41,7 @@ const ProcessSection = () => {
       color: "from-red-500 to-red-600",
       bgColor: "bg-red-50",
       borderColor: "border-red-200",
-      stats: "2,600+ familias"
+      stats: "10,000+ familias"
     },
     {
       icon: <FaTruck />,
@@ -212,7 +212,7 @@ const ProcessSection = () => {
               </h3>
               
               <p className="text-gray-600 text-lg leading-relaxed">
-                Cada mes entregamos más de 70,000 kg de alimentos a 2,600 familias en 70 comunidades de 7 municipios, beneficiando a más de 10,000 personas con programas de apoyo integral.
+                Cada mes entregamos más de 70,000 kg de alimentos a 10,000 familias en 70 comunidades de 7 municipios, beneficiando a más de 10,000 personas con programas de apoyo integral.
               </p>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
@@ -221,12 +221,12 @@ const ProcessSection = () => {
                   <div className="text-gray-700 font-semibold text-sm">Kg mensuales</div>
                 </div>
                 <div className="bg-white/70 rounded-2xl p-6 ">
-                  <div className="text-3xl font-black text-yellow-500 mb-2">2,600+</div>
+                  <div className="text-3xl font-black text-yellow-500 mb-2">10,000+</div>
                   <div className="text-gray-700 font-semibold text-sm">Familias</div>
                 </div>
                 <div className="bg-white/70 rounded-2xl p-6 ">
                   <div className="text-3xl font-black text-red-500 mb-2">70</div>
-                  <div className="text-gray-700 font-semibold text-sm">Comunidades</div>
+                  <div className="text-gray-700 font-semibold text-sm">Grupos comunitarios</div>
                 </div>
                 <div className="bg-white/70 rounded-2xl p-6 ">
                   <div className="text-3xl font-black text-purple-600 mb-2">7</div>

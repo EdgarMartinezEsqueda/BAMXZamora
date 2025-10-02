@@ -9,25 +9,25 @@ const FunFact = () => {
 
   const stats = [
     { 
-      value: 9, 
-      suffix: " mil", 
-      label: "Familias atendidas mensualmente", 
+      value: 2600, 
+      suffix: "+", 
+      label: "Familias beneficiadas", 
       icon: FaHandHoldingHeart,
       color: "from-verdeLogo to-green-600",
       bgColor: "bg-green-50",
       borderColor: "border-green-200"
     },
     { 
-      value: 58, 
+      value: 70, 
       suffix: " mil", 
-      label: "Paquetes distribuidos en 2024", 
+      label: "Kg de alimentos mensuales", 
       icon: FaBoxes,
       color: "from-amarilloLogo to-yellow-600",
       bgColor: "bg-yellow-50",
       borderColor: "border-yellow-200"
     },
     { 
-      value: 14, 
+      value: 7, 
       suffix: "", 
       label: "Municipios atendidos", 
       icon: FaHome,
@@ -36,9 +36,9 @@ const FunFact = () => {
       borderColor: "border-teal-200"
     },
     { 
-      value: 90, 
+      value: 70, 
       suffix: "+", 
-      label: "Puntos de entrega", 
+      label: "Grupos comunitarios", 
       icon: FaTruck,
       color: "from-rojoLogo to-red-600",
       bgColor: "bg-red-50",
@@ -95,7 +95,7 @@ const FunFact = () => {
               <div className="flex items-start gap-4">
                 <div className="w-1 bg-gradient-to-b from-verdeLogo to-amarilloLogo rounded-full h-24 mt-2 flex-shrink-0"></div>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  Cada paquete que entregamos lleva más que comida: lleva esperanza, dignidad y el respaldo de una comunidad comprometida. En 14 municipios de Los Altos, trabajamos día a día para que nadie se quede sin lo esencial.
+                  Cada apoyo que entregamos lleva más que alimento: lleva esperanza, dignidad y el respaldo de una comunidad comprometida. En 7 municipios de la región, trabajamos día a día para que las familias más vulnerables mejoren su calidad de vida.
                 </p>
               </div>
             </div>
@@ -138,12 +138,12 @@ const FunFact = () => {
                   key={index}
                   className={`group relative bg-white border ${stat.borderColor} rounded-3xl p-8 hover:shadow-xl transition-all duration-500 hover:scale-[1.02]`}
                 >
-                  <div className={`absolute top-6 right-6 w-12 h-12 bg-gradient-to-br ${stat.color} rounded-xl flex items-center justify-center text-white shadow-md`}>
+                  <div className={`absolute top-6 right-6 w-12 h-12 bg-gradient-to-br ${stat.color} rounded-xl flex items-center justify-center text-white shadow-md z-1`}>
                     <stat.icon className="text-lg" />
                   </div>
 
                   <div className="space-y-4">
-                    <div className="text-5xl lg:text-6xl font-black text-gray-900 group-hover:text-amarilloLogo transition-colors duration-300">
+                    <div className="text-5xl lg:text-5xl font-black text-gray-900 group-hover:text-amarilloLogo transition-colors duration-300">
                       <Odometer 
                         value={values[index]} 
                         format="(,ddd)" 
@@ -160,7 +160,7 @@ const FunFact = () => {
                         <div 
                           className={`h-full bg-gradient-to-r ${stat.color} rounded-full transition-all duration-1000 ease-out`}
                           style={{
-                            width: isVisible ? '100%' : '0%',
+                            width: isVisible ? "100%" : "0%",
                             transitionDelay: `${index * 0.2}s`
                           }}
                         ></div>

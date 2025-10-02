@@ -4,7 +4,7 @@ import { FiHeart, FiUsers } from "react-icons/fi";
 const MissionVision = () => {
   const programs = [
     {
-      image: "assets/images/beneficiarios/6.webp",
+      image: "assets/images/beneficiarios/18.webp",
       title: "Por - Hambre y + Sonrisas",
       description: "Apadrina a personas en vulnerabilidad y ayúdanos a cubrir sus necesidades básicas de alimentación, salud y educación con seguimiento integral",
       icon: <FaGift />,
@@ -12,10 +12,9 @@ const MissionVision = () => {
       bgColor: "bg-rojoLogo/10",
       borderColor: "border-rojoLogo/20",
       link: "/programas#apadrinamiento",
-      stats: "2,600+ familias"
     },
     {
-      image: "assets/images/beneficiarios/2.webp",
+      image: "assets/images/programas/voluntariado.webp",
       title: "Voluntariado BAZAC",
       description: "Sé parte del corazón de nuestras acciones. Dona tu tiempo, talento y energía en clasificación de alimentos, eventos y campañas de sensibilización",
       icon: <FaHandshake />,
@@ -23,10 +22,9 @@ const MissionVision = () => {
       bgColor: "bg-verdeLogo/10",
       borderColor: "border-verdeLogo/20",
       link: "/programas#voluntariado",
-      stats: "70 grupos comunitarios"
     },
     {
-      image: "assets/images/beneficiarios/3.webp",
+      image: "assets/images/programas/talleres.webp",
       title: "Talleres BAZAC",
       description: "Participa en talleres y actividades formativas mensuales que fortalecen el bienestar, la autosuficiencia y el desarrollo integral de la comunidad",
       icon: <FaHandsHelping />,
@@ -37,7 +35,7 @@ const MissionVision = () => {
       stats: "Gratuitos o costo simbólico"
     },
     {
-      image: "assets/images/beneficiarios/4.webp",
+      image: "assets/images/programas/comedor.webp",
       title: "Comedor Comunitario",
       description: "Espacio solidario que ofrece desayunos nutritivos y accesibles, apoyando a personas vulnerables y fortaleciendo la seguridad alimentaria comunitaria",
       icon: <FaHandHoldingHeart />,
@@ -140,11 +138,11 @@ const MissionVision = () => {
                   <a
                     href={program.link}
                     className={`group/btn inline-flex items-center gap-3 ${program.isSpecial 
-                      ? 'bg-gradient-to-r from-purple-500 to-purple-700 text-white' 
+                      ? "bg-gradient-to-r from-purple-500 to-purple-700 text-white" 
                       : `bg-gradient-to-r ${program.color} text-white`
                     } px-6 py-3 rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-105 font-semibold text-sm`}
                   >
-                    {program.isSpecial ? 'Ver todos' : 'Más información'}
+                    {program.isSpecial ? "Ver todos" : "Más información"}
                     <FaArrowRight className="text-xs group-hover/btn:translate-x-1 transition-transform" />
                   </a>
                 </div>
