@@ -160,7 +160,8 @@ const AboutSection = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
                   <a 
-                    href="https://drive.google.com/file/d/1MOLsJYjUikDTGME5J-GIB1zskrC5U-lc/preview" 
+                    href="https://www.facebook.com/share/v/19jCqWF62H/" 
+                    target="_blank"
                     className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full flex items-center justify-center hover:bg-amarilloLogo hover:border-amarilloLogo transition-all duration-300 shadow-2xl group-hover:scale-110"
                   >
                     <FiPlay className="text-white text-2xl ml-1" />
