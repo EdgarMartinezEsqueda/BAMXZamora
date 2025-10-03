@@ -1,14 +1,15 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router";
+import { Route, BrowserRouter as Router, Routes } from "react-router";
 
 import PageName from "components/title/PageName";
-import HomePage from "pages/home";
-import ErrorPage  from "pages/404";
-import Programs  from "pages/programs";
-import Contact from "pages/contact";
+import ErrorPage from "pages/404";
 import AboutUs from "pages/about";
-import Donate from "pages/donate";
-import FAQs from "pages/questions";
+import Apadrinamiento from "pages/apadrinamiento";
 import Beneficiaries from "pages/beneficiaries";
+import Contact from "pages/contact";
+import Donate from "pages/donate";
+import HomePage from "pages/home";
+import Programs from "pages/programs";
+import FAQs from "pages/questions";
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
     { path: "/donar", element: <Donate />,  title: "Dona ahora" },
     { path: "/preguntas", element: <FAQs />,  title: "Preguntas frecuentes" },
     { path: "/beneficiarios", element: <Beneficiaries />,  title: "Se parte de nuestro padrón" },
+    { path: "/apadrinamiento", element: <Apadrinamiento />,  title: "Por menos hambre y más sonrisas" },
     { path: "*", element: <ErrorPage />,  title: "Ha surgido un error" },
   ];
 //     { path: "/faqs", element: < FAQs /> },

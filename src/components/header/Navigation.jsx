@@ -9,6 +9,7 @@ const Navigation = () => {
     { nombre: "Nosotros", href: "/nosotros" },
     { nombre: "Programas", href: "/programas" },
     { nombre: "Beneficiarios", href: "/beneficiarios" },
+    { nombre: "Apadrinamiento", href: "/apadrinamiento" },
     { nombre: "Contacto", href: "/contacto" },
   ];
 
