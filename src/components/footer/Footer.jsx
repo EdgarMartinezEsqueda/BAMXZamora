@@ -128,7 +128,7 @@ const Footer = () => {
           {/* Logo del Banco */}
           <div className="relative">
             <img
-              src="/assets/images/zamora.webp"
+              src="/assets/images/logoOscuro.webp"
               alt="Logo Banco de Alimentos"
               className="h-14 object-contain"
             />
