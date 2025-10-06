@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const PageMeta = ({ title, description, image="https://bamxzamora.org/assets/preview.jpg", children }) => {
+const PageMeta = ({ title, description, image="https://bamxzamora.org/assets/images/preview.jpg", children }) => {
   useEffect(() => {
     // Cambiar título
     document.title = `${title} | BAMX Zamora`;
