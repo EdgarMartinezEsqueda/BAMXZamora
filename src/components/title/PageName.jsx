@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const PageMeta = ({ title, description, image="https://bamxzamora.org/assets/preview.webp", children }) => {
+const PageMeta = ({ title, description, image="https://bamxzamora.org/assets/preview.jpg", children }) => {
   useEffect(() => {
     // Cambiar título
     document.title = `${title} | BAMX Zamora`;
@@ -15,11 +15,11 @@ const PageMeta = ({ title, description, image="https://bamxzamora.org/assets/pre
 
     updateMetaTag("og:title", `${title} | BAMX Zamora`);
     updateMetaTag("og:description", description);
-    updateMetaTag("og:image", image || "https://tudominio.com/default-preview.jpg");
+    updateMetaTag("og:image", image);
     
     updateMetaTag("twitter:title", `${title} | BAMX Zamora`);
     updateMetaTag("twitter:description", description);
-    updateMetaTag("twitter:image", image || "https://tudominio.com/default-preview.jpg");
+    updateMetaTag("twitter:image", image);
 
   }, [title, description, image]);
 
