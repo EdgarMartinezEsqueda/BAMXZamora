@@ -35,7 +35,7 @@ const AboutSection = () => {
       "Promovemos programas biopsicosociales para mejorar la calidad de vida."
     ],
     Tab2: [
-      "Comedor Comunitario BAZAC: desayunos nutritivos a bajo costo.",
+      "Comedor Comunitario BAMX Zamora: desayunos nutritivos a bajo costo.",
       "Campañas solidarias: Abrigando Corazones, Rescatón y Pequeñas Sonrisas.",
       "Programa de apadrinamiento: 'Por menos hambre y más sonrisas'."
     ],

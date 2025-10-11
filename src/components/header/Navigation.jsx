@@ -62,7 +62,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center px-4 py-4 border-b border-gray-700">
           <a href="/">
             <img
-              src="/assets/images/logoModoOscuro.png"
+              src="/assets/images/logoOscuro.webp"
               alt="Logo"
               className="h-10"
             />

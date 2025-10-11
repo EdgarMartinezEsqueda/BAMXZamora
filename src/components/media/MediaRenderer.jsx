@@ -15,7 +15,7 @@ const MediaRenderer = ({ media, alt, title }) => {
         />
         <div className="absolute top-4 left-4 bg-black/70 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-medium">
           <FaPlay className="inline mr-2" />
-          Video testimonial
+          Video
         </div>
       </div>
     );

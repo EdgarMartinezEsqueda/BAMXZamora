@@ -19,7 +19,7 @@ const HistoryTimeline = () => {
     {
       year: "2020-2023",
       title: "Programas Integrales",
-      description: "Implementamos programas biopsicosociales, talleres educativos y el Comedor Comunitario BAZAC.",
+      description: "Implementamos programas biopsicosociales, talleres educativos y el Comedor Comunitario BAMX Zamora.",
       icon: <FaTrophy className="w-5 h-5" />,
       color: "bg-verdeLogo"
     },

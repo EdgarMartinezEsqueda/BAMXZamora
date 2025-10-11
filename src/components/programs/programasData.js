@@ -3,7 +3,7 @@ export const programas = [
     id: "voluntariado",
     iconName: "FaHandsHelping",
     title: "Voluntariado",
-    description: "El voluntariado en BAZAC es el corazón de nuestras acciones. A través del compromiso y solidaridad de personas como tú, logramos que los alimentos lleguen a quienes más los necesitan. Puedes ayudar en clasificación y empaque de alimentos, apoyo en eventos, programas y campañas de sensibilización. Dona tu tiempo, talento y energía para transformar vidas.",
+    description: "El voluntariado en BAMX Zamora es el corazón de nuestras acciones. A través del compromiso y solidaridad de personas como tú, logramos que los alimentos lleguen a quienes más los necesitan. Puedes ayudar en clasificación y empaque de alimentos, apoyo en eventos, programas y campañas de sensibilización. Dona tu tiempo, talento y energía para transformar vidas.",
     keyPoints: [
       "Actividades desde clasificación hasta eventos especiales",
       "Flexibilidad de horarios según tu disponibilidad",
@@ -38,13 +38,14 @@ export const programas = [
     },
     faqs: [
       { question: "¿Cómo funciona el apadrinamiento?", answer: "Puedes apadrinar de manera monetaria o en especie. Nosotros nos encargamos del seguimiento integral del caso." },
-      { question: "¿Puedo elegir a quién apadrinar?", answer: "Sí, difundimos casos vulnerables en redes sociales o podemos asignarte uno según las necesidades actuales." }
+      { question: "¿Puedo elegir a quién apadrinar?", answer: "Sí, difundimos casos vulnerables en redes sociales o podemos asignarte uno según las necesidades actuales." },
+      { question: "Beneficios de ser padrino", answer: "Apoyas una causa vital, contribuyes al crecimiento personal y te conviertes en red de apoyo. Al ser Donataria Autorizada, podremos entregarte un recibo deducible al realizar tu donativo." }
     ]
   },
   {
     id: "comedor-comunitario",
     iconName: "FaUtensils",
-    title: "Comedor Comunitario BAZAC",
+    title: "Comedor comunitario móvil",
     description: "Iniciativa diseñada para brindar apoyo a personas en situación de vulnerabilidad y ofrecer una opción accesible y nutritiva. Ofrecemos desayunos completos a bajo costo para que trabajadores y voluntarios comiencen su día con la energía y bienestar necesarios. Este espacio se ha convertido en un símbolo de solidaridad donde la alimentación es un acto de apoyo mutuo y colaboración.",
     keyPoints: [
       "Desayunos nutritivos y accesibles",
@@ -53,8 +54,8 @@ export const programas = [
       "Espacio de solidaridad y convivencia"
     ],
     media: {
-      type: "image",
-      src: "/assets/images/programas/comedor.webp",
+      type: "video",
+      src: "https://drive.google.com/file/d/1sqTezYc-u_Ahg8IA0_KdPor4mplGJ26Y/preview",
       alt: "Comedor comunitario sirviendo desayunos"
     },
     faqs: [
@@ -63,9 +64,9 @@ export const programas = [
     ]
   },
   {
-    id: "talleres-bazac",
+    id: "talleres-BAMX Zamora",
     iconName: "FaChalkboardTeacher",
-    title: "Talleres BAZAC",
+    title: "Talleres BAMX Zamora",
     description: "Fomentamos el desarrollo integral de la comunidad a través de talleres y actividades formativas que se realizan de manera periódica. Estos programas se ofrecen mensualmente, en modalidad gratuita o con costo simbólico, para que estén al alcance de todas las personas. Su propósito es brindar herramientas prácticas que fortalezcan el bienestar, la autosuficiencia y la participación activa de la comunidad.",
     keyPoints: [
       "Talleres mensuales variados y formativos",
@@ -86,7 +87,7 @@ export const programas = [
   {
     id: "sabado-cultural",
     iconName: "FaPalette",
-    title: "Sábado Cultural BAZAC",
+    title: "Sábado Cultural BAMX Zamora",
     description: "Nos esforzamos por preparar las mentes de nuestros niños para actuar y transformar los espacios donde se desenvuelven. Nuestro compromiso es crear ambientes de formación donde cada niño tenga la oportunidad de crecer y convertirse en un verdadero agente de cambio en su entorno. Dirigido principalmente a niños de 6 a 12 años de la Colonia Valencia.",
     keyPoints: [
       "Formación integral para niños de 6 a 12 años",

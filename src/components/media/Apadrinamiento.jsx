@@ -30,7 +30,7 @@ const Apadrinamiento = () => {
     },
     {
       title: "Beneficios de ser padrino",
-      description: "Apoyas una causa vital, contribuyes al crecimiento personal y te conviertes en red de apoyo",
+      description: "Apoya una causa vital y recibe un recibo deducible. Mantente al tanto del progreso de tu apadrinado.",
       icon: FiHeart
     },
     {

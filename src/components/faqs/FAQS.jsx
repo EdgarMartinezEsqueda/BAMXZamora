@@ -31,7 +31,7 @@ const preguntas = [
   },
   {
     question: "¿Qué programas tienen activos?",
-    answer: "Actualmente contamos con Comedor Comunitario BAZAC, Apadrinamientos 'Por menos hambre y más sonrisas', Talleres comunitarios, Voluntariado y campañas como Abrigando Corazones, Pequeñas Sonrisas y el Rescatón.",
+    answer: "Actualmente contamos con Comedor Comunitario BAMX Zamora, Apadrinamientos 'Por menos hambre y más sonrisas', Talleres comunitarios, Voluntariado y campañas como Abrigando Corazones, Pequeñas Sonrisas y el Rescatón.",
     category: "general",
     icon: FiUsers
   },

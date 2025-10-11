@@ -15,7 +15,7 @@ const MissionVision = () => {
     },
     {
       image: "assets/images/programas/voluntariado.webp",
-      title: "Voluntariado BAZAC",
+      title: "Voluntariado BAMX Zamora",
       description: "Sé parte del corazón de nuestras acciones. Dona tu tiempo, talento y energía en clasificación de alimentos, eventos y campañas de sensibilización",
       icon: <FaHandshake />,
       color: "from-verdeLogo to-green-600",
@@ -25,7 +25,7 @@ const MissionVision = () => {
     },
     {
       image: "assets/images/programas/talleres.webp",
-      title: "Talleres BAZAC",
+      title: "Talleres BAMX Zamora",
       description: "Participa en talleres y actividades formativas mensuales que fortalecen el bienestar, la autosuficiencia y el desarrollo integral de la comunidad",
       icon: <FaHandsHelping />,
       color: "from-amarilloLogo to-yellow-600",

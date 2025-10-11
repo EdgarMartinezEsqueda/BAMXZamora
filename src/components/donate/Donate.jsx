@@ -19,14 +19,14 @@ const Donate = () => {
     {
       id: "clabe",
       label: "CLABE Interbancaria",
-      value: import.meta.env.VITE_clabe || "012345678901234567",
+      value: import.meta.env.VITE_clabe,
       icon: FiHome,
       description: "Transferencias desde cualquier banco"
     },
     {
       id: "cuenta",
       label: "Cuenta BANBAJÍO",
-      value: import.meta.env.VITE_cuenta || "1234567890",
+      value: import.meta.env.VITE_cuenta,
       icon: FiCreditCard,
       description: "Depósito directo en para cuentas BANBAJÍO"
     }
