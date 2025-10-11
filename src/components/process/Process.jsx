@@ -67,10 +67,11 @@ const ProcessSection = () => {
       icon: <FaHandsHelping />,
       number: "07",
       title: "Programas Comunitarios",
-      description: "Implementamos actividades como el Comedor Comunitario, talleres, voluntariado y programas de apadrinamiento.",
+      description: "Implementamos diversas actividades para nuestros beneficiarios.",
       color: "from-green-500 to-green-600",
       bgColor: "bg-green-50",
       borderColor: "border-green-200",
+      link: "/programas",
       stats: "Impacto biopsicosocial"
     }
   ];
@@ -162,7 +163,13 @@ const ProcessSection = () => {
                     
                     <div className="text-center">
                       <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-green-600 transition-colors">
-                        {item.title}
+                        {item.link ? 
+                          <a href={item.link}>
+                            {item.title}
+                          </a>
+                        : item.title
+                        }
+
                       </h3>
                       <p className="text-gray-600 text-sm leading-relaxed mb-4">
                         {item.description}
